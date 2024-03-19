@@ -3,6 +3,7 @@ $('#addTodo').click(function () {
     $("#todoList").append("<li><input type='checkbox'>" + inputTodo + "</li>");
 
     $("input").val("");
+
 });
 
 $(document).on("change", "input[type=checkbox]", function () {
@@ -14,3 +15,5 @@ $(document).on("change", "input[type=checkbox]", function () {
         $(this).closest("li").css("color", "#000");
     }
 });
+
+
